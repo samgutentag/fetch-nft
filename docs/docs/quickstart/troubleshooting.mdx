@@ -6,14 +6,22 @@ sidebar_position: 7
 
 > Having Issues? Here are some commonly reported issues and resolutions.
 
-## OpenSea API Key
+## Examples not returning Ethereum NFTs
 
-> text goes here
+> By default, Fetch-NFT uses the public Opensea API and the Solana mainnet RPC endpoint. To configure API keys and endpoints, see [Usage With Configs](./config-usage).
 
-## Certificate Issues
+## React Example App Certificate Errors
 
-> text goes here
+Changes to react have introduced some certificat issues. While not suggested for production apps, making the below change to your `package.json` file will get you up and running.
 
-## Mismatched Dependencies
+replace this:
 
-> text goes here
+```json
+"start": "react-scripts start",
+```
+
+with this:
+
+```json
+"start": "react-scripts --openssl-legacy-provider start",
+```

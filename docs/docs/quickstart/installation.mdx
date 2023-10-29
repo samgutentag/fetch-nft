@@ -10,3 +10,15 @@ npm install @solana/spl-token @solana/web3.js
 
 npm install @audius/fetch-nft
 ```
+
+:::tip Mismatched dependencies
+
+Recent changes to the Solana [spl-token library](https://www.npmjs.com/package/@solana/spl-token-registry) are not currently compatible with Fetch-NFT.
+
+While a fix is in the works, run the `npm install` command with pinned version `0.1.8` like this.
+
+```bash
+npm install @solana/spl-token@^0.1.8 @solana/web3.js
+```
+
+:::
