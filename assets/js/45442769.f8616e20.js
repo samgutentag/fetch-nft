@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[6843],{4034:a=>{a.exports=JSON.parse('{"label":"hola","permalink":"/fetch-nft/blog/tags/hola","allTagsPath":"/fetch-nft/blog/tags","count":1}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[6564],{8720:e=>{e.exports=JSON.parse('{"label":"facebook","permalink":"/fetch-nft/blog/tags/facebook","allTagsPath":"/fetch-nft/blog/tags","count":1}')}}]);
