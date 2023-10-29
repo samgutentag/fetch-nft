@@ -108,7 +108,7 @@ const config = {
               },
               {
                 label: "DevRel Strategy",
-                to: "/docs/devrel-strategy/identify-developer-community",
+                to: "/docs/devrel-strategy",
               },
               {
                 label: "Documentation",
