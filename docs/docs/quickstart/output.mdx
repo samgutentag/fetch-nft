@@ -1,0 +1,38 @@
+---
+sidebar_position: 5
+---
+
+# Output Types
+
+## Collectible
+
+```ts
+type Collectible = {
+  id: string;
+  tokenId: string;
+  name: string | null;
+  description: string | null;
+  mediaType: CollectibleMediaType;
+  frameUrl: string | null;
+  imageUrl: string | null;
+  gifUrl: string | null;
+  videoUrl: string | null;
+  threeDUrl: string | null;
+  isOwned: boolean;
+  dateCreated: string | null;
+  dateLastTransferred: string | null;
+  externalLink: string | null;
+  permaLink: string | null;
+  assetContractAddress: string | null;
+  chain: Chain;
+  wallet: string;
+};
+```
+
+## CollectibleState
+
+```ts
+type CollectibleState = {
+  [wallet: string]: Collectible[];
+};
+```

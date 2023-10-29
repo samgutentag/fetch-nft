@@ -7,11 +7,11 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Fetch-NFT",
-  tagline: "keep trying to make fetch happen",
+  tagline: "A dead simple library to fetch and display Ethereum & Solana NFTs!",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: "https://your-docusaurus-test-site.com",
+  url: "https://samgutentag.com/fetch-nft",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/fetch-nft/",
@@ -41,15 +41,13 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          // editUrl: "https://github.com/samgutentag/fetch-nft/docs/",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          //   editUrl: "https://github.com/samgutentag/fetch-nft/blog/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -64,21 +62,34 @@ const config = {
       // Replace with your project's social card
       image: "img/docusaurus-social-card.jpg",
       navbar: {
-        title: "My Site",
+        title: "| Fetch-NFT",
         logo: {
-          alt: "My Site Logo",
-          src: "img/logo.svg",
+          alt: "Fetch-NFT",
+          src: "img/Horizontal_Black.svg",
+          srcDark: "img/Horizontal_White.svg",
         },
         items: [
           {
             type: "docSidebar",
-            sidebarId: "tutorialSidebar",
+            sidebarId: "quickstartSidebar",
             position: "left",
-            label: "Tutorial",
+            label: "Quickstart",
           },
-          { to: "/blog", label: "Blog", position: "left" },
           {
-            href: "https://github.com/facebook/docusaurus",
+            type: "docSidebar",
+            sidebarId: "strategySidebar",
+            position: "left",
+            label: "DevRel Strategy",
+          },
+          {
+            type: "docSidebar",
+            sidebarId: "docsSidebar",
+            position: "left",
+            label: "Documentation",
+          },
+          // { to: "/blog", label: "Blog", position: "left" },
+          {
+            href: "https://github.com/samgutentag/fetch-nft",
             label: "GitHub",
             position: "right",
           },
@@ -91,8 +102,16 @@ const config = {
             title: "Docs",
             items: [
               {
-                label: "Tutorial",
-                to: "/docs/intro",
+                label: "Quickstart",
+                to: "/docs/quickstart/getting-started",
+              },
+              {
+                label: "DevRel Strategy",
+                to: "/docs/devrel-strategy/identify-developer-community",
+              },
+              {
+                label: "Documentation",
+                to: "/docs/documentation/approach",
               },
             ],
           },
@@ -100,34 +119,39 @@ const config = {
             title: "Community",
             items: [
               {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
+                label: "Audius",
+                href: "https://www.audius.co",
               },
               {
                 label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
+                href: "https://discord.gg/audius",
               },
               {
                 label: "Twitter",
-                href: "https://twitter.com/docusaurus",
+                href: "https://twitter.com/audius",
               },
             ],
           },
           {
-            title: "More",
+            title: "Listen with Audius",
             items: [
               {
-                label: "Blog",
-                to: "/blog",
+                label: "Download the App",
+                href: "https://www.audius.co/download",
               },
               {
-                label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
+                label: "App Store",
+                href: "https://apps.apple.com/us/app/audius-music/id1491270519",
+              },
+              {
+                label: "Google Play",
+                href: "https://play.google.com/store/apps/details?id=co.audius.app",
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        // copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with ☕️, ❤️, and Docusaurus.`,
+        copyright: `Built with ☕️, ❤️, and Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,

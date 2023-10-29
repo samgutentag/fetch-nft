@@ -1,0 +1,29 @@
+---
+sidebar_position: 4
+---
+
+# Main Functions
+
+Getting Ethereum collectibles:
+
+```ts
+FetchNFTClient::getEthereumCollectibles(wallets: string[]) => Promise<CollectibleState>
+```
+
+Getting Solana collectibles:
+
+```ts
+FetchNFTClient::getSolanaCollectibles(wallets: string[]) => Promise<CollectibleState>
+```
+
+Getting all collectibles:
+
+```ts
+FetchNFTClient::getCollectibles({
+  ethWallets?: string[],
+  solWallets?: string[]
+}) => Promise<{
+  ethCollectibles: CollectibleState
+  solCollectibles: CollectibleState
+}>
+```

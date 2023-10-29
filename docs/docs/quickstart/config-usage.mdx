@@ -1,0 +1,31 @@
+---
+sidebar_position: 6
+---
+
+# Usage with Configs
+
+```ts
+import { FetchNFTClient } from '@audius/fetch-nft'
+
+// Open Sea Config
+const openSeaConfig = {
+    apiEndpoint: '...',
+    apiKey: '...',
+    assetLimit: 50,
+    eventLimit: 300
+}
+
+// Solana Config
+const solanaConfig = {
+    rpcEndpoint: '...'
+}
+
+// Initialize fetch client with configs
+const fetchClient = new FetchNFTClient({ openSeaConfig, solanaConfig })
+
+// Fetching Ethereum collectibles for the given wallets
+fetchClient.getEthereumCollectibles([...]).then(res => console.log(res))
+
+// Fetching Solana collectibles for the given wallets
+fetchClient.getSolanaCollectibles([...]).then(res => console.log(res))
+```
